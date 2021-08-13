@@ -1,12 +1,12 @@
 module.exports = function reverse (n) {
  let reverseNum = '';
-	if (num < 0) {
-		num = Math.abs(num);
+	if (n < 0) {
+		n = Math.abs(n);
 	}
-	while(num > 0){
-		let oneNum = num % 10;
+	while(n > 0){
+		let oneNum = n % 10;
 		reverseNum += String(oneNum);
-		num = Math.floor(num / 10);
+		n = Math.floor(n / 10);
 	}
 	return +reverseNum;	
 }
