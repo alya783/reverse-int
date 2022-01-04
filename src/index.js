@@ -4,8 +4,8 @@ module.exports = function reverse (n) {
 		n = Math.abs(n);
 	}
 	while(n > 0){
-		let oneNum = n % 10;
-		reverseNum += String(oneNum);
+		let number = n % 10;
+		reverseNum += String(number);
 		n = Math.floor(n / 10);
 	}
 	return +reverseNum;	
